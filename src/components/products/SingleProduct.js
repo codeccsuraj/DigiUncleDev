@@ -20,7 +20,7 @@ const SingleProduct = ({ product }) => {
           <div className='col py-3'>
             <h2 className='fs-2 text-center fw-bold'>Popular Products</h2>
             <p className='text-center h5 py-3'>
-              <Link className='h5 nav-link text-primary'>See all</Link>
+              <Link to='/shop' className='h5 nav-link text-primary'>See all</Link>
             </p>
           </div>
           <div className='row col-11'>

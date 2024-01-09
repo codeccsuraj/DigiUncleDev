@@ -9,7 +9,7 @@ const Categories = () => {
         <div className='col py-3'>
           <h2 className='fs-2 text-center fw-bold'>Shop by Categories</h2>
           <p className='text-center h5 py-3'>
-            <Link to='/all-categories' className='nav-link text-primary'>
+            <Link to={`/shop`} className='nav-link text-primary'>
               See all
             </Link>
           </p>
@@ -19,7 +19,7 @@ const Categories = () => {
             <div key={item.id} className='col-lg'>
               <div className='category-card position-relative rounded overflow-hidden'>
                 <img src={item.image} alt='' className='img-fluid' />
-                <Link className='nav-link'><h2 className='category-title position-absolute'>{item.categoryName}</h2></Link>
+                <Link to={`/shop/${item.categoryName}`} className='nav-link'><h2 className='category-title position-absolute'>{item.categoryName}</h2></Link>
               </div>
             </div>
           ))}

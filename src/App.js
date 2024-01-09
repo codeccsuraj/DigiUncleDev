@@ -39,6 +39,7 @@ const App = () => {
                 {/* Pass the products prop here */}
                 <Route path='products/:id' element={<ProductDetails products={products} />} />
                 <Route path='shop/:category' element={<Shop products={products} />} />
+                <Route path='shop' element={<Shop products={products} />} />
                 <Route path='cart' element={<Cart />} />
               </Route>
             </Routes>
