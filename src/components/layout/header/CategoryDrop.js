@@ -16,7 +16,8 @@ const CategoryDrop = () => {
   return (
     <div className='category-dropdown'>
       <nav className='navbar'>
-        <ul>
+        <ul className='nav flex-column'>
+            <li><Link to='/shop' className='nav-link'>See all</Link></li>
           {categories.map((category) => (
             <li key={category.id} className='nav-item'>
               <Link

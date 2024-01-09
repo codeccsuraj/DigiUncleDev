@@ -7,7 +7,7 @@
   font-family: 'Josefin Sans', sans-serif;
 }
 body{
-  background-color: #f2f2f2;
+  /* background-color: #f2f2f2; */
   overflow-x: hidden;
 }
 .hr{
@@ -189,4 +189,18 @@ body{
 
 .product-border-hover:hover{
   border: 1px solid grey;
+}
+
+.search-filter-image img{
+  height: 80px;
+}
+.search-result-box{
+  height: 60vh;
+  overflow: scroll;
+  transition: 0.3s ease-in;
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+}
+.search-result-box::-webkit-scrollbar{
+  display: none;
 }

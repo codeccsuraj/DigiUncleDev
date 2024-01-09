@@ -22,7 +22,7 @@ const Shop = ({ products }) => {
   return (
     <>
       <div className='row justify-content-center'>
-        <div className='col-3 bg-secondary-subtle'>
+        <div className='col-3'>
           <Sidebar />
         </div>
         <div className='col-lg'>
@@ -46,14 +46,14 @@ const Shop = ({ products }) => {
                       <Link to={`/products/${product.id}`}><img src={product.image} alt='' className='img-fluid' /></Link>
                     </div>
                     <div className='col-lg'>
-                      <Link to={`/products/${product.id}`}><h2 className='fs-6 fw-bold'>{product.title}</h2></Link>
+                      <Link to={`/products/${product.id}`}><h2 className='fs-6'>{product.title}</h2></Link>
                       <p className='fs-7'>{product.description}</p>
                       <UserRating />
                       <div className='product-price'>
                         {product.discounted ? (
-                          <p><del className='fs-7'>{product.price}</del> <span className='fs-5'>{product.currency} {product.discounted}</span></p>
+                          <p><del className='fs-7'>{product.price}</del> <span className='fs-5'>{product.discounted}</span></p>
                         ) : (
-                          <p className='fs-5'>{product.currency} {product.price}</p>
+                          <p>{product.price}</p>
                         )}
                       </div>
                     </div>

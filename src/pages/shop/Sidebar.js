@@ -4,6 +4,9 @@ const Sidebar = () => {
   return (
     <>
         <div className='container-fluid'>
+            <div className='price-slider py-2'>
+                <h2 className='fs-4'>Select price range</h2>
+            </div>
             <div className='category-box'>
                 <h2 className='fs-4 py-2'>Categories</h2>
                 <div className="form-check py-2 mb-3">
