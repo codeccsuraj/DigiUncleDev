@@ -1,11 +1,12 @@
 import React from 'react'
-import hero_img from '../../assets/heroimg.jpg'
+// import hero_img from '../../assets/heroimg.jpg'
 import Carasoul from './Carasoul'
+import PopularProducts from '../products/PopularProducts'
 const Banner = () => {
   return (
     <>  
         <Carasoul />
-        <section className='banner-header-wrapper'>
+        {/* <section className='banner-header-wrapper'>
           <div className='container-fluid'>  
             <div className='row justify-content-center align-items-center py-4'>
               <div className='col-lg-7 py-4'>
@@ -19,7 +20,8 @@ const Banner = () => {
               </div>
             </div>
           </div>
-        </section>
+        </section> */}
+        <PopularProducts />
     </>
   )
 } 

@@ -55,7 +55,7 @@ const Search = () => {
                         <img src={item.image} alt='' className='img-fluid' />
                       </div>
                       <div className='col'>
-                      {item.title}
+                        {item.title}
                       </div>
                     </div>
                   </li>

@@ -41,20 +41,21 @@ const Shop = ({ products }) => {
           <div className='row py-4 '>
               {filteredProducts.map((product) => (
                <div key={product.id} className='col-4 mb-3 p-2 product-border-hover'>
-                  <div className='row'>
+                  <div className='row justify-content-center align-items-center'>
                     <div className='col-4'>
                       <Link to={`/products/${product.id}`}><img src={product.image} alt='' className='img-fluid' /></Link>
                     </div>
                     <div className='col-lg'>
-                      <Link to={`/products/${product.id}`}><h2 className='fs-6'>{product.title}</h2></Link>
-                      <p className='fs-7'>{product.description}</p>
-                      <UserRating />
-                      <div className='product-price'>
+                      <Link to={`/products/${product.id}`}><h2 className='fs-5 fw-bold'>{product.title}</h2></Link>
+                      <p className='fs-7'>{product.description.split(' ').slice(0, 7).join(' ')}...</p>
+                      <UserRating initialRating={product.rating} />
+                      <div className='product-price d-flex justify-content-between align-items-center py-2'>
                         {product.discounted ? (
-                          <p><del className='fs-7'>{product.price}</del> <span className='fs-5'>{product.discounted}</span></p>
+                          <p><del className='fs-7'>{product.currency} {product.price}</del> <span className='fs-5'>{product.discounted}</span></p>
                         ) : (
-                          <p>{product.price}</p>
+                          <p>{product.currency} {product.price}</p>
                         )}
+                          <button className='btn btn-warning rounded-0'>Buy</button>
                       </div>
                     </div>
                   </div>

@@ -39,14 +39,26 @@ body{
 .bar::after{
   content: '';
   position: absolute;
-  left: 0;
-  height: 100%;
-  top: -3px;
+  left: -10px;
+  height: 60%;
+  top: 13px;
   width: 4px;
   background-color: #393e46;
 }
 .bg-dark-blue{
   background-color: #05004e;
+}
+
+.bg-gradient-blue{
+  background: radial-gradient(circle at 10% 20%, rgb(148, 241, 246) 0%, rgb(148, 189, 246) 100.7%);
+}
+
+.brand-img-thumbnail{
+  width: 350px;
+  height: 150px;
+  border: 4px solid #c4bebe;
+  border-radius: 10px;
+  box-shadow: 2px 10px 10px rgba(0, 0, 0, 0.3);
 }
 
 /* navbar css start */
@@ -100,9 +112,9 @@ body{
   height: 35vh;
 }
 .product-img .prod-img{
-  height: 35vh;
+  height: 100%;
+  object-fit: contain;
   width: 100%;
-  object-fit: cover;
 }
 .cart-list{
   height: 82vh;
@@ -110,6 +122,9 @@ body{
 }
 .cart-list::-webkit-scrollbar{
     display: none;
+}
+.card-img-top{
+  height: 30vh;
 }
 /* product css ends here */
 
@@ -127,7 +142,7 @@ body{
 /* //carasoul css */
 
 .carousel-item img{
-  height: 65vh;
+  height: 80vh;
 }
 
 /* category css starts */
@@ -208,4 +223,40 @@ body{
 }
 .search-result-box::-webkit-scrollbar{
   display: none;
+}
+
+/* Custom arrow styles */
+.custom-slick-arrow {
+  width: 30px;
+  height: 30px;
+  background-color: #777373; /* Set your dark background color here */
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.custom-prev-arrow::before,
+.custom-next-arrow::before {
+  content: '‹'; /* Unicode arrow character for previous and next */
+  font-size: 18px;
+  color: #fff; /* Set your light text color here */
+}
+
+/* Positioning styles for the arrows */
+.custom-prev-arrow {
+  left: -30px;
+}
+
+.custom-next-arrow {
+  right: -30px;
+}
+.feature-wrapper{
+  background-image: linear-gradient(112.1deg, rgba(32, 38, 57, 0.664) 11.4%, rgba(63, 76, 119, 0.658) 70.2%),url('./assets/7788653.jpg');
+  background-size: cover;
+  background-attachment: fixed;
 }

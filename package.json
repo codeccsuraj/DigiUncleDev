@@ -20,8 +20,10 @@
     "react-responsive-carousel": "^3.2.23",
     "react-router-dom": "^6.21.1",
     "react-scripts": "5.0.1",
+    "react-slick": "^0.29.0",
     "react-toastify": "^9.1.3",
     "react-use-cart": "^1.2.1",
+    "slick-carousel": "^1.8.1",
     "sweetalert2": "^11.10.2",
     "tailwindcss": "^3.4.0",
     "web-vitals": "^2.1.4"

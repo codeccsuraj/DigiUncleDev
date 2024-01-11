@@ -64,7 +64,7 @@ const Navbar = () => {
                                 <Link className='nav-link text-light fw-bold d-flex align-items-center gap-2 border-start'>Return Policy</Link>
                             </li>
                             <li className='nav-item'>
-                                <Link className='nav-link text-light fw-bold d-flex align-items-center gap-2 border-start'>Shop</Link>
+                                <Link to='/shop' className='nav-link text-light fw-bold d-flex align-items-center gap-2 border-start'>Shop</Link>
                             </li>
                             <li className='nav-item'>
                                 <Link className='nav-link text-light fw-bold d-flex align-items-center gap-2 border-start'>Blog</Link>

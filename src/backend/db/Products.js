@@ -10,6 +10,12 @@ import category_img3 from '../../assets/banner/category_img3.png';
 import home_decor_brassBottel_1 from '../../assets/home_decor/brass.jpg'
 import home_decor_double_clock_1 from '../../assets/home_decor/vintClock.jpg'
 
+import brandMeesho from '../../assets/banner/meesho.jpg'
+import brandAmazon from '../../assets/banner/amazon.png'
+import brandFlipkart from '../../assets/banner/flipkart.jpg'
+import brandDigiuncle from '../../assets/DigiUncle (1).png'
+
+
 
 export const products = [
   {
@@ -152,7 +158,7 @@ export const products = [
     title: "Double Side Railway Style Clock",
     description: "Hand-Crafted Clock with Brass Electroplating Finish , Design with Rare Royal Touch",
     description2 : "Hand-Crafted Clock with Brass Electroplating Finish , Design with Rare Royal Touch - Comes with Batteries , Stand and Screws for Wall Hanging",
-    price: 217592.00,
+    price: 2172.00,
     product_code : "5DF44FG525253", // 13 digit
     currency: "₹",
     categoryName : "Lamps & Chandelier",
@@ -253,3 +259,26 @@ export const categories = [
     image : category_img1,
   },
 ]
+
+export const brands = [
+  {
+    id : 1,
+    brandImg : brandMeesho,
+    brand : "meesho",
+  },
+  {
+    id : 2,
+    brandImg : brandAmazon,
+    brand : "Flipkart",
+  },
+  {
+    id : 3,
+    brandImg : brandFlipkart,
+    brand : "Digiuncle",
+  },
+  {
+    id : 4,
+    brandImg : brandDigiuncle,
+    brand : "Amazon",
+  },
+] 
