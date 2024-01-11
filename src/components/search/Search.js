@@ -45,10 +45,10 @@ const Search = () => {
         </span>
 
         {searchTerm && (
-          <div className='col search-result-box w-100 bg-secondary-subtle position-absolute'>
+          <div className='col search-result-box w-100 bg-light position-absolute'>
             <ul className='nav flex-column'>
               {searchResult.map((item) => (
-                <Link key={item.id} to={`/products/${item.id}`} onClick={handleResultClick} className='h6 p-2 nav-item border-bottom border-danger'>
+                <Link key={item.id} to={`/products/${item.id}`} onClick={handleResultClick} className='h6 p-2 nav-item border-bottom border-secondary'>
                   <li className='nav-link text-dark'>
                     <div className='row'>
                       <div className='col-2 search-filter-image'>

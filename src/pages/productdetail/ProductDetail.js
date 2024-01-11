@@ -38,7 +38,7 @@ const ProductDetails = ({ products }) => {
               <p className='py-2'>{product.description}</p>
               <p className='hr'></p>
               <div className='prod-ratings py-2'>
-                <UserRating />
+                <UserRating initialRating={product.rating} />
               </div>
               <div className='product-detail'>
                 <h3 className='text-secondary py-2'>Product details :</h3>
@@ -46,15 +46,19 @@ const ProductDetails = ({ products }) => {
                   <tbody>
                     <tr>
                       <th scope='col'>Material :</th>
+                      <td>{product.material}</td>
                     </tr>
                     <tr>
                       <th scope='col'>Dimension :</th>
+                      <td>{product.dimension}</td>
                     </tr>
                     <tr>
                       <th scope='col'>weight :</th>
+                      <td>{product.weight}</td>
                     </tr>
                     <tr>
                       <th scope='col'>color :</th>
+                      <td>{product.color}</td>
                     </tr>
                     <tr>
                       <th scope='col'>Manufacture :</th>

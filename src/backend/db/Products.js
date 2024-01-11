@@ -7,6 +7,9 @@ import category_img1 from '../../assets/banner/category_img1.png';
 import category_img2 from '../../assets/banner/category_img2.png';
 import category_img3 from '../../assets/banner/category_img3.png';
 
+import home_decor_brassBottel_1 from '../../assets/home_decor/brass.jpg'
+import home_decor_double_clock_1 from '../../assets/home_decor/vintClock.jpg'
+
 
 export const products = [
   {
@@ -20,7 +23,7 @@ export const products = [
     categoryName : "Home & Decor",
     product_code : "ASD4565SS562",
     image: "https://rb.gy/yqvcsh",
-    rating : "3",
+    rating : 4,
   },
   {
     id: 2,
@@ -33,7 +36,7 @@ export const products = [
     discounted: "1556",
     product_code : "ASD4565SS562",
     image: "https://rb.gy/d4bd0m",
-    rating : "4",
+    rating : 5,
   },
   {
     id: 3,
@@ -45,7 +48,7 @@ export const products = [
     price: "3000",
     product_code : "ASD4565SS562",
     image: "https://rb.gy/px7svm",
-    rating : "4.5",
+    rating : 3,
   },
   {
     id: 4,
@@ -58,7 +61,7 @@ export const products = [
     discounted: "15569",
     product_code : "ASD4565SS562",
     image: "https://rb.gy/d4bd0m",
-    rating : "3.5",
+    rating : 4,
   },
   {
     id: 5,
@@ -71,7 +74,7 @@ export const products = [
     currency: "₹",
     categoryName : "Lamps & Chandelier",
     image: "https://shorturl.at/htFMW",
-    rating : "4",
+    rating : 2,
   },
   {
     id: 6,
@@ -85,7 +88,7 @@ export const products = [
     currency: "₹",
     categoryName : "Lamps & Chandelier",
     image: "https://shorturl.at/erBQ8",
-    rating : "4",
+    rating : 4,
   },
   {
     id: 7,
@@ -98,7 +101,7 @@ export const products = [
     currency: "₹",
     categoryName : "Furniture & Carpets",
     image: "https://shorturl.at/vxG68",
-    rating : "4",
+    rating : 3,
   },
   {
     id: 8,
@@ -111,7 +114,7 @@ export const products = [
     currency: "₹",
     categoryName : "Furniture & Carpets",
     image: "https://shorturl.at/suyYZ",
-    rating : "4",
+    rating : 3,
   },
   {
     id: 9,
@@ -124,33 +127,41 @@ export const products = [
     currency: "₹",
     categoryName : "Furniture & Carpets",
     image: "https://shorturl.at/htFMW",
-    rating : "4",
+    rating : 5,
   },
   {
     id: 10,
-    brand : 'Marshell',
-    title: "Royal Antique Choker Necklace",
-    description: "A 22KT yellow gold traditional necklace (30.61 gms).",
-    description2 : "A 22KT yellow gold traditional necklace (30.61 gms). A delightful blend of ethnic and contemporary, this necklace will complement any look! (Without Back Chain)",
-    price: 217592.00,
+    brand : 'Akriti Brass Art Wares',
+    title: "Antique Brass Bottle Vintage Look",
+    description: "(15.5 cm x 10 cm x 24.5 cm, Golden) 1000 ml Bottle Pack of 1 Bar Accessories Bar décor Utility Gift Decorative Bottle",
+    description2 : "This antique brass bottle can very well be used to keep water or wine. It is made up of original old monk bottle which has a brass case over it.",
+    price: 2192.00,
     product_code : "ASD4565SS562",
     currency: "₹",
-    categoryName : "Furniture & Carpets",
-    image: "https://shorturl.at/htFMW",
-    rating : "4",
+    categoryName : "Home & Decor",
+    image: home_decor_brassBottel_1,
+    rating : 3,
+    material : "Brass",
+    color : "Gold",
+    quantity : 15,
+    capacity : "1000ml"
   },
   {
     id: 11,
-    brand : 'Marshell',
-    title: "Royal Antique Choker Necklace",
-    description: "A 22KT yellow gold traditional necklace (30.61 gms).",
-    description2 : "A 22KT yellow gold traditional necklace (30.61 gms). A delightful blend of ethnic and contemporary, this necklace will complement any look! (Without Back Chain)",
+    brand : 'Vintage Clock',
+    title: "Double Side Railway Style Clock",
+    description: "Hand-Crafted Clock with Brass Electroplating Finish , Design with Rare Royal Touch",
+    description2 : "Hand-Crafted Clock with Brass Electroplating Finish , Design with Rare Royal Touch - Comes with Batteries , Stand and Screws for Wall Hanging",
     price: 217592.00,
-    product_code : "ASD4565SS562",
+    product_code : "5DF44FG525253", // 13 digit
     currency: "₹",
-    categoryName : "Furniture & Carpets",
-    image: "https://shorturl.at/htFMW",
-    rating : "4",
+    categoryName : "Lamps & Chandelier",
+    image: home_decor_double_clock_1,
+    rating : 4,
+    dimension : "38.1W x 38.1H ",
+    color: "golden",
+    weight: "30.61gm",
+    material : "brass",
   },
   {
     id: 12,
@@ -163,7 +174,7 @@ export const products = [
     currency: "₹",
     categoryName : "Home & Decor",
     image: "https://shorturl.at/htFMW",
-    rating : "4",
+    rating : 5,
   },
   {
     id: 13,
@@ -176,7 +187,7 @@ export const products = [
     currency: "₹",
     categoryName : "Furniture & Carpets",
     image: "https://shorturl.at/htFMW",
-    rating : "4",
+    rating : 3,
   },
   {
     id: 14,
@@ -189,7 +200,7 @@ export const products = [
     currency: "₹",
     categoryName : "Furniture & Carpets",
     image: "https://shorturl.at/htFMW",
-    rating : "4",
+    rating : 2,
   },
   {
     id: 15,
@@ -202,7 +213,7 @@ export const products = [
     currency: "₹",
     categoryName : "Home & Decor",
     image: "https://shorturl.at/htFMW",
-    rating : "4",
+    rating : 2,
   },
 ]
 

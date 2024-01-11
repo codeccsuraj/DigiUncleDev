@@ -99,6 +99,11 @@ body{
 .product-img{
   height: 35vh;
 }
+.product-img .prod-img{
+  height: 35vh;
+  width: 100%;
+  object-fit: cover;
+}
 .cart-list{
   height: 82vh;
   overflow-x: scroll;

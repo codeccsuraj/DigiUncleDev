@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
-import { categories, products } from '../../../backend/db/Products';
+import { categories } from '../../../backend/db/Products';
 
 const CategoryDrop = () => {
   const [selectedCategory, setSelectedCategory] = useState(null);
@@ -8,16 +8,16 @@ const CategoryDrop = () => {
   const handleCategoryClick = (category) => {
     setSelectedCategory(category);
   };
-
-  const filterProducts = selectedCategory
-    ? products.filter((product) => product.categoryName === selectedCategory)
-    : products;
-
+console.log(selectedCategory)
   return (
     <div className='category-dropdown'>
       <nav className='navbar'>
         <ul className='nav flex-column'>
-            <li><Link to='/shop' className='nav-link'>See all</Link></li>
+          <li>
+            <Link to='/shop' className='nav-link'>
+              See all
+            </Link>
+          </li>
           {categories.map((category) => (
             <li key={category.id} className='nav-item'>
               <Link
